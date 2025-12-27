@@ -1,0 +1,35 @@
+2025-12-27 10:18:51,371 [INFO] CSV転記処理を開始します。
+2025-12-27 10:23:24,463 [INFO] CSV転記処理を開始します。
+2025-12-27 10:56:29,460 [INFO] CSV転記処理を開始します。
+2025-12-27 10:56:29,461 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\勉強\Python\ExcelUpdateScript\scripts\main.py", line 37, in main
+    csvData = load_csv()
+              ^^^^^^^^^^
+TypeError: load_csv() missing 1 required positional argument: 'input_Config'
+2025-12-27 10:56:57,190 [INFO] CSV転記処理を開始します。
+2025-12-27 10:56:57,191 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\勉強\Python\ExcelUpdateScript\scripts\main.py", line 37, in main
+    csvData = load_csv(configData["input"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\勉強\Python\ExcelUpdateScript\scripts\main.py", line 14, in load_csv
+    df = pd.read_csv(csv_path, encoding='utf-8')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\user\\Documents\\勉強\\Python\\ExcelUpdateScript\\data\\input\\sample_data.csv'
+2025-12-27 10:58:21,080 [INFO] CSV転記処理を開始します。
