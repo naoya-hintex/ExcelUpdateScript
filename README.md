@@ -1,0 +1,2 @@
+# ExcelUpdateScript
+CSVファイルをPythonで読み込み、Excelファイルのシートに貼り付けるスクリプトです。
