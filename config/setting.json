@@ -1,20 +1,19 @@
 {
   "input": {
     "csv_folder": "data/in",
-    "file_name": "sample_data.csv",
-    "encoding": "utf-8",
-    "delimiter": ",",
-    "has_header": true,
-    "start_row": 2
+    "csv_file": "sample_data.csv",
+    "encoding": "utf-8"
   },
   "output": {
-    "excel_file": "data/output/dashboard.xlsx",
+    "output_folder": "data/out",
+    "excel_file": "dashboard.xlsx",
     "sheet_name": "データ",
-    "start_cell": "A2"
+    "start_row": 0
   },
   "log": {
     "enable": true,
-    "log_file": "logs/app.log",
+    "log_folder": "logs",
+    "log_file": "app.log",
     "level": "INFO",
     "format": "%(asctime)s [%(levelname)s] %(message)s"
   }

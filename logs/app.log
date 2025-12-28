@@ -33,3 +33,340 @@ Traceback (most recent call last):
              ^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\user\\Documents\\勉強\\Python\\ExcelUpdateScript\\data\\input\\sample_data.csv'
 2025-12-27 10:58:21,080 [INFO] CSV転記処理を開始します。
+2025-12-28 12:02:20,854 [INFO] CSV転記処理を開始します。
+2025-12-28 12:06:33,057 [INFO] CSV転記処理を開始します。
+2025-12-28 12:06:49,962 [INFO] CSV転記処理を開始します。
+2025-12-28 12:10:38,604 [INFO] CSV転記処理を開始します。
+2025-12-28 12:35:57,464 [INFO] CSV転記処理を開始します。
+2025-12-28 12:35:59,995 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 48, in main
+    outputData = aggregate_daily(csvData)
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 24, in aggregate_daily
+    csvData.to_excel('output.xlsx', sheet_name='結果', index=False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 952, in write
+    writer._write_cells(
+    ~~~~~~~~~~~~~~~~~~~^
+        formatted_cells,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        freeze_panes=freeze_panes,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 486, in _write_cells
+    for cell in cells:
+                ^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 889, in get_formatted_cells
+    for cell in itertools.chain(self._format_header(), self._format_body()):
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 617, in _format_header_mi
+    raise NotImplementedError(
+    ...<2 lines>...
+    )
+NotImplementedError: Writing to Excel with MultiIndex columns and no index ('index'=False) is not yet implemented.
+2025-12-28 12:38:01,469 [INFO] CSV転記処理を開始します。
+2025-12-28 12:38:02,459 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 48, in main
+    outputData = aggregate_daily(csvData)
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 24, in aggregate_daily
+    csvData.to_excel('..\output.xlsx', sheet_name='result', index=False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 952, in write
+    writer._write_cells(
+    ~~~~~~~~~~~~~~~~~~~^
+        formatted_cells,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        freeze_panes=freeze_panes,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 486, in _write_cells
+    for cell in cells:
+                ^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 889, in get_formatted_cells
+    for cell in itertools.chain(self._format_header(), self._format_body()):
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 617, in _format_header_mi
+    raise NotImplementedError(
+    ...<2 lines>...
+    )
+NotImplementedError: Writing to Excel with MultiIndex columns and no index ('index'=False) is not yet implemented.
+2025-12-28 12:42:09,338 [INFO] CSV転記処理を開始します。
+2025-12-28 12:43:07,746 [INFO] CSV転記処理を開始します。
+2025-12-28 12:43:08,335 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 48, in main
+    outputData = aggregate_daily(csvData)
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 24, in aggregate_daily
+    csvData.to_excel(r'C:\Users\user\Documents\GitHub\ExcelUpdateScript\data\out\output.xlsx', sheet_name='result', index=False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 952, in write
+    writer._write_cells(
+    ~~~~~~~~~~~~~~~~~~~^
+        formatted_cells,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        freeze_panes=freeze_panes,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 486, in _write_cells
+    for cell in cells:
+                ^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 889, in get_formatted_cells
+    for cell in itertools.chain(self._format_header(), self._format_body()):
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 617, in _format_header_mi
+    raise NotImplementedError(
+    ...<2 lines>...
+    )
+NotImplementedError: Writing to Excel with MultiIndex columns and no index ('index'=False) is not yet implemented.
+2025-12-28 12:45:29,321 [INFO] CSV転記処理を開始します。
+2025-12-28 13:01:31,616 [INFO] CSV転記処理を開始します。
+2025-12-28 13:01:31,662 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 72, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 34, in update_excel
+    book = xl.load_workbook(file_path)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+                         data_only, keep_links, rich_text)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\user\\Documents\\GitHub\\ExcelUpdateScript\\data\\output\\dashboard.xlsx'
+2025-12-28 13:02:12,557 [INFO] CSV転記処理を開始します。
+2025-12-28 13:02:12,700 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 72, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 47, in update_excel
+    writer.book = book
+    ^^^^^^^^^^^
+AttributeError: property 'book' of 'OpenpyxlWriter' object has no setter
+2025-12-28 13:03:52,411 [INFO] CSV転記処理を開始します。
+2025-12-28 13:03:52,467 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 71, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 45, in update_excel
+    with pd.ExcelWriter(file_path, engine='openpyxl', mode='a', if_sheet_exists='overlay', book=book) as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ExcelWriter.__new__() got an unexpected keyword argument 'book'
+2025-12-28 13:05:03,146 [INFO] CSV転記処理を開始します。
+2025-12-28 13:05:03,335 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 73, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 49, in update_excel
+    writer.sheets = {ws.title: ws for ws in book.worksheets}
+    ^^^^^^^^^^^^^
+AttributeError: property 'sheets' of 'OpenpyxlWriter' object has no setter
+2025-12-28 13:05:26,097 [INFO] CSV転記処理を開始します。
+2025-12-28 13:05:26,232 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 73, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 52, in update_excel
+    outputData.to_excel(writer, sheet_name=sheet_name, index=False, header=False, startrow=1)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\generic.py", line 2439, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 952, in write
+    writer._write_cells(
+    ~~~~~~~~~~~~~~~~~~~^
+        formatted_cells,
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        freeze_panes=freeze_panes,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 486, in _write_cells
+    for cell in cells:
+                ^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 889, in get_formatted_cells
+    for cell in itertools.chain(self._format_header(), self._format_body()):
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\formats\excel.py", line 617, in _format_header_mi
+    raise NotImplementedError(
+    ...<2 lines>...
+    )
+NotImplementedError: Writing to Excel with MultiIndex columns and no index ('index'=False) is not yet implemented.
+2025-12-28 13:05:45,202 [INFO] CSV転記処理を開始します。
+2025-12-28 13:24:59,446 [INFO] CSV転記処理を開始します。
+2025-12-28 13:24:59,452 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:24:59,460 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:24:59,568 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:25:52,871 [INFO] CSV転記処理を開始します。
+2025-12-28 13:25:52,876 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:25:52,884 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:25:53,030 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:28:32,293 [INFO] CSV転記処理を開始します。
+2025-12-28 13:28:32,299 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:28:32,311 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:28:32,350 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 77, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 48, in update_excel
+    with pd.ExcelWriter(file_path, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
+         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\user\\Documents\\GitHub\\ExcelUpdateScript\\data\\out\\dashboard.xlsx'
+2025-12-28 13:28:40,816 [INFO] CSV転記処理を開始します。
+2025-12-28 13:28:40,821 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:28:40,829 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:28:40,910 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'start_row'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 77, in main
+    update_excel(outputData, configData["output"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 55, in update_excel
+    outputData.to_excel(writer, sheet_name=sheet_name, header=False, startrow=outputData["start_row"])
+                                                                              ~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4112, in __getitem__
+    return self._getitem_multilevel(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4170, in _getitem_multilevel
+    loc = self.columns.get_loc(key)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\multi.py", line 3059, in get_loc
+    loc = self._get_level_indexer(key, level=0)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\multi.py", line 3410, in _get_level_indexer
+    idx = self._get_loc_single_level_index(level_index, key)
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\multi.py", line 2999, in _get_loc_single_level_index
+    return level_index.get_loc(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\user\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'start_row'
+2025-12-28 13:29:11,752 [INFO] CSV転記処理を開始します。
+2025-12-28 13:29:11,758 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:29:11,767 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:29:11,853 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:29:58,372 [INFO] CSV転記処理を開始します。
+2025-12-28 13:29:58,377 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:29:58,385 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:29:58,462 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:30:48,215 [INFO] CSV転記処理を開始します。
+2025-12-28 13:30:48,222 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:30:48,259 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:30:48,368 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:33:46,303 [INFO] CSV転記処理を開始します。
+2025-12-28 13:33:46,309 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:33:46,320 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:33:46,437 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:34:41,362 [INFO] CSV転記処理を開始します。
+2025-12-28 13:34:41,370 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:34:41,378 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:34:41,465 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:53:50,072 [INFO] CSV転記処理を開始します。
+2025-12-28 13:53:50,077 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:53:50,078 [ERROR] エラーが発生しました。
+Traceback (most recent call last):
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 92, in main
+    outputData = aggregate_daily(csvData)
+  File "c:\Users\user\Documents\GitHub\ExcelUpdateScript\scripts\main.py", line 31, in aggregate_daily
+    summaryCsvData = summaryCsvData.pivot_table(index='date', columns='category', values=['count', 'avg_process_time'], aggfunc='sum', dropna=True)
+                     ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'summaryCsvData' where it is not associated with a value
+2025-12-28 13:54:14,846 [INFO] CSV転記処理を開始します。
+2025-12-28 13:54:14,852 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:54:14,861 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:54:14,958 [INFO] エクセルファイルの更新が完了しました。
+2025-12-28 13:58:24,144 [INFO] CSV転記処理を開始します。
+2025-12-28 13:58:24,149 [INFO] CSVファイルからデータ取得が完了しました。
+2025-12-28 13:58:24,156 [INFO] アウトプットデータの作成が完了しました。
+2025-12-28 13:58:24,242 [INFO] エクセルファイルの更新が完了しました。
