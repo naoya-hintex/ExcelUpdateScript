@@ -70,6 +70,12 @@ def update_excel(output_data, output_config):
         # 2行目から書き込む
         output_data.to_excel(writer, sheet_name=sheet_name, header=False, startrow=output_config["start_row"])
 
+        # 罫線のクリア
+        for row in ws.iter_rows(min_row=output_config["start_row"] + 1, max_row=ws.max_row, 
+                                min_col=1, max_col=ws.max_column):
+            for cell in row:
+                cell.border = xl.styles.Border()
+
 # ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
 # 関数名           main                                                             
 # 処理概要         メイン処理                                                          
