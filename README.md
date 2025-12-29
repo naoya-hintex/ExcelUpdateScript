@@ -7,8 +7,10 @@ Excelファイルにはグラフがあり、データ転記により自動的に
 ## 📷 実行イメージ
 
 **スクリプト実行前**
+![Dashboard Sample](images/graph_before_update.png)
 
 **スクリプト実行後**
+![Dashboard Sample](images/graph_after_update.png)
 
 ---
 
@@ -49,16 +51,21 @@ Excelファイルにはグラフがあり、データ転記により自動的に
 
 ```text
 ExcelUpdateScript/
-├─ main.py
-├─ config.py
-├─ logger.py
-├─ common.py
+├─ images/
+│  ├─ graph_before_update.png
+│  └─ graph_after_update.png
+├─ scripts/
+│  ├─ main.py
+│  ├─ config.py
+│  ├─ logger.py
+│  └─ common.py
 ├─ config/
 │  └─ setting.json
-├─ in/
-│  └─ sample_data.csv
-├─ out/
-│  └─ dashboard.xlsx
+├─ data/
+│  ├─ in/
+│  │  └─ sample_data.csv
+│  └─ out/
+│     └─ dashboard.xlsx
 └─ logs/
    └─ app.log
 ```
